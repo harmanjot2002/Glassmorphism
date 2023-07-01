@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <title>Login Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="form-box">
+            <div class="form-value">
+                <form action="" id="login-form">
+                    <h2>Login</h2>
+                    <div class="inputbox">
+                        <!-- <i class='bx bx-envelope' ></i> -->
+                        <i class="fa-regular fa-envelope"></i>
+                        <input type="email" id="email" autocomplete="off" required>
+                        <label for="">Email</label>
+                        <small>Error message</small>
+                    </div>
+                    <div class="inputbox">
+                        <!-- <i class='bx bx-lock-open-alt'></i> -->
+                        <input type="password" id="password" required>
+                        <label for="password">Password</label>
+                        <div class="eye-area">
+                            <div class="eye-box" onclick="myLogPassword()">
+                                <i class="fa-regular fa-eye" id="eye"></i>
+                                <i class="fa-regular fa-eye-slash" id="eye-slash"></i>
+                            </div>
+                        </div>
+                        <small>Error message</small>
+                    </div>
+                    <div class="forget">
+                        <label for=""><input type="checkbox">Remember Me  
+                            <a href="#">Forget Password</a>
+                        </label>
+                      
+                    </div>
+                    <button id="btn" type="submit">Log in</button>
+                    <div class="register">
+                        <p>Don't have a account <a href="#">Register</a></p>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
